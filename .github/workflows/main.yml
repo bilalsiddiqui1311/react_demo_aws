@@ -30,6 +30,8 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2.3.2    
       - name: List directory
         run: ls        
       - name: upload to s3
