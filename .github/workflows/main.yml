@@ -15,14 +15,8 @@ jobs:
         run: npm install      
       
       - name: Build
-        env:
-          CI: false          
-          #If CI is true, then any warning in the application/code will be treated as error. and eventually it'll fail the p
         run: npm run build
-        artifacts:
-          paths:
-           - build/
-      
+
       - name: Test
         run: npm test
         
