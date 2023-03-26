@@ -21,6 +21,9 @@ jobs:
         
       - name: Test
         run: npm test
+
+      - name: List directory
+        run: ls
         
   deploy:
     name: Deploy to S3
