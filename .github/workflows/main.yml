@@ -1,7 +1,7 @@
 name: React Deployment On AWS-S3-Bucket
 on:
   push:
-    branches: [s3Deploy]      
+    branches: [main]      
 jobs:
 
   build:
